@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    color: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+p {
+    max-width: 400px;
+}
+
+#container {
+    max-width: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 90vh;
+}
+
+header {
+    display: inline-block;
+}
+
+.title {
+    padding: 10px 30px;
+}
+
+.title-contains {
+    padding: 10px 30px;
+    font-family: 'Inconsolata';
+    font-weight: 700;
+    font-size: 24px;
+    font-style: bold;
+    letter-spacing: -8%;
+    color: #333;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+
+.image img {
+    max-width: 500px;
+}
+
+.contents {
+    font-family: 'Space Mono', monospace;
+}
+
+.headline {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.contains {
+    color: #4f4f4f;
+    font-size: 24px;
+    margin-bottom: 60px;
+}
+
+.button {
+    border: 1px solid #333;
+    padding: 20px 36px;
+    background-color: #333;
+    text-transform: uppercase;
+    color: white;
+    font-size: 14px;
+    letter-spacing: -0.035em;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    color: #4f4f4f;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+}
+
+.sosmed {
+    margin-right: 30px;
+}
+
+@media only screen and (max-width: 760px) {
+    #container {
+        height: 100%;
+    }
+    main {
+        flex-direction: column;
+    }
+}
